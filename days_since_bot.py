@@ -99,7 +99,16 @@ async def on_message(message):
 
         counter["last_seen"] = now.isoformat()
         changed = True
-        await message.reply(response, mention_author=False)
+        try:
+            await message.reply(response, mention_author=False)
+        except discord.Forbidden:
+            channel = message.channel
+            category = getattr(channel, "category", None)
+            print(
+                f"Missing permissions to reply in #{channel} (id={channel.id}, "
+                f"category={category.name if category else 'none'}) "
+                f"in server '{message.guild.name}' (id={message.guild.id})"
+            )
 
     if changed:
         save_data(data)
