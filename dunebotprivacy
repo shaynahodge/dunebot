@@ -1,0 +1,75 @@
+# Days Since Discord Bot Privacy Policy
+
+**Last updated: November 17, 2026**
+
+Days Since is a Discord bot that tracks the amount of time since configured words or phrases were last mentioned in a Discord server.
+
+## Information processed
+
+To provide this functionality, Days Since processes messages in Discord server channels where the bot has been granted access. Message content is checked only to determine whether it contains a word or phrase configured for tracking.
+
+## Information stored
+
+Days Since stores only the information necessary to maintain its counters:
+
+- Discord server ID
+- Configured tracked words or phrases
+- Timestamp of the most recent detected mention
+- Longest completed streak for each tracked word or phrase
+
+Days Since does not intentionally store:
+
+- Discord message content or message history
+- Usernames or display names
+- Individual Discord user IDs
+- Email addresses
+- Direct messages
+- Payment information
+- User profiles or behavioral analytics
+
+## Message content
+
+Message content is processed in real time to identify configured words or phrases. The message itself is not retained by Days Since after this check.
+
+The bot ignores direct messages and messages sent by other bots.
+
+## How information is used
+
+Information processed or stored by Days Since is used only to:
+
+- Detect configured words or phrases
+- Calculate the number of days since the previous mention
+- Display the previous streak and longest recorded streak
+- Maintain separate counters for each Discord server
+
+## Data sharing
+
+Days Since does not sell personal information, use Discord data for advertising, or share stored counter information with third parties for marketing purposes.
+
+The bot's hosting provider may process limited technical information as necessary to operate the service, subject to that provider's own terms and privacy practices.
+
+## Data retention and deletion
+
+Counter data is retained while a tracked counter remains active or while the bot continues operating in a Discord server.
+
+A server administrator with the required Discord permissions can delete a tracked counter and its associated stored data by using:
+
+`/counter remove`
+
+Server administrators may also remove the bot from their server. Requests to delete any remaining application data may be directed to the bot owner using the contact method listed below.
+
+## Security
+
+Reasonable steps are taken to limit access to the bot token and stored counter data. However, no online service or storage system can guarantee absolute security.
+
+## Children's privacy
+
+Days Since is not designed to collect personal information from children. The bot does not intentionally store user identities or message content.
+
+## Changes to this policy
+
+This policy may be updated if the bot's functionality, hosting, or data practices change. The “Last updated” date at the top of this document will be revised when material changes are made.
+
+## Contact
+
+For privacy questions or data deletion requests, contact the Days Since bot owner or a server administrator in the Discord server where the bot is installed.
